@@ -6,5 +6,5 @@ target 'RentCalc' do
   use_frameworks!
 
   # Pods for RentCalc
-
+    pod 'SmoothButton'
 end

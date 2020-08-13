@@ -7,26 +7,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RentCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="RentCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="5RB-fP-ttU">
-                                <rect key="frame" x="40" y="79" width="334" height="98.5"/>
+                                <rect key="frame" x="40" y="79" width="334" height="114.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RentCal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDk-dM-daC">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="64.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="55"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something Clever Input here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSP-4P-uqb">
-                                        <rect key="frame" x="0.0" y="78" width="334" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="94.5" width="334" height="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -92,9 +92,12 @@
                                 <rect key="frame" x="100" y="664" width="214" height="52"/>
                                 <color key="backgroundColor" red="0.54901960780000003" green="0.72941176470000002" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="What can I afford?"/>
+                                <connections>
+                                    <action selector="calculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eru-4d-PfO"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.37254901960784315" green="0.8666666666666667" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="7Jz-cE-Q3y" firstAttribute="top" secondItem="UNN-Zc-o2r" secondAttribute="bottom" constant="30" id="1TG-SV-45Q"/>
                             <constraint firstItem="5RB-fP-ttU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="8sP-9z-e5z"/>
@@ -119,21 +122,30 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="affordButtonLabel" destination="kKv-SE-ljB" id="5P9-F4-KLg"/>
+                        <outlet property="expenseTextField" destination="shy-X4-AAk" id="AvL-sL-SfK"/>
+                        <outlet property="incomeTextField" destination="PEb-PF-N6f" id="k76-WU-kba"/>
+                        <outlet property="savingsTextField" destination="4q1-dV-FdL" id="teq-DZ-dRV"/>
+                        <outlet property="secondTitleLabel" destination="jSP-4P-uqb" id="Sq1-Gk-dTs"/>
+                        <outlet property="titleLabel" destination="fDk-dM-daC" id="Ys1-Um-gG4"/>
+                        <segue destination="T8o-Dc-17h" kind="show" identifier="Results" id="gfW-pG-LWn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="tcF-ri-Zpe">
             <objects>
-                <viewController id="T8o-Dc-17h" sceneMemberID="viewController">
+                <viewController id="T8o-Dc-17h" customClass="SecondViewController" customModule="RentCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d0P-2E-jqB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="C1N-y8-yGS">
-                                <rect key="frame" x="50" y="124.5" width="126" height="269"/>
+                                <rect key="frame" x="50" y="80.5" width="126" height="269"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="diq-3a-UuX">
                                         <rect key="frame" x="0.0" y="0.0" width="126" height="61"/>
@@ -172,8 +184,8 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mFF-6R-Aod">
                                         <rect key="frame" x="0.0" y="208" width="126" height="61"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ob-1n-bMS">
-                                                <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ob-1n-bMS">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -188,8 +200,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucy-Cy-xRE">
-                                <rect key="frame" x="44" y="552" width="326" height="220"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucy-Cy-xRE">
+                                <rect key="frame" x="48" y="525" width="326" height="220"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="220" id="WhY-sR-Ycm"/>
                                 </constraints>
@@ -199,7 +211,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="82" translatesAutoresizingMaskIntoConstraints="NO" id="Mu1-rB-Zy1">
-                                <rect key="frame" x="306" y="132" width="42" height="225.5"/>
+                                <rect key="frame" x="306" y="88" width="42" height="225.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3q0-7D-NQD">
                                         <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
@@ -221,26 +233,31 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rent Afffordability" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jl-54-Mqs">
-                                <rect key="frame" x="40" y="63" width="334" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rent Afffordability" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jl-54-Mqs">
+                                <rect key="frame" x="40" y="40" width="334" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytC-Gc-kuZ">
-                                <rect key="frame" x="112" y="441" width="191" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytC-Gc-kuZ">
+                                <rect key="frame" x="112" y="441" width="191" height="30"/>
                                 <state key="normal" title="Reset Income"/>
+                                <connections>
+                                    <action selector="resetButton:" destination="T8o-Dc-17h" eventType="touchUpInside" id="CXp-QW-rbN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Mu1-rB-Zy1" firstAttribute="top" secondItem="2jl-54-Mqs" secondAttribute="bottom" constant="27.5" id="09Y-R8-lZX"/>
+                            <constraint firstItem="RWy-mw-Jfz" firstAttribute="bottom" secondItem="ucy-Cy-xRE" secondAttribute="bottom" constant="63" id="9hB-dq-GB4"/>
+                            <constraint firstItem="RWy-mw-Jfz" firstAttribute="trailing" secondItem="ytC-Gc-kuZ" secondAttribute="trailing" constant="111" id="GHK-vn-efJ"/>
                             <constraint firstItem="RWy-mw-Jfz" firstAttribute="trailing" secondItem="2jl-54-Mqs" secondAttribute="trailing" constant="40" id="IZr-UE-loC"/>
                             <constraint firstItem="C1N-y8-yGS" firstAttribute="leading" secondItem="RWy-mw-Jfz" secondAttribute="leading" constant="50" id="Orf-bJ-nMt"/>
                             <constraint firstItem="C1N-y8-yGS" firstAttribute="top" secondItem="2jl-54-Mqs" secondAttribute="bottom" constant="20" id="TOY-fW-dUx"/>
-                            <constraint firstItem="ucy-Cy-xRE" firstAttribute="top" secondItem="C1N-y8-yGS" secondAttribute="bottom" constant="123.5" id="Tr0-x5-alh"/>
                             <constraint firstItem="2jl-54-Mqs" firstAttribute="leading" secondItem="RWy-mw-Jfz" secondAttribute="leading" constant="40" id="UZU-lZ-aqj"/>
+                            <constraint firstItem="ucy-Cy-xRE" firstAttribute="top" secondItem="ytC-Gc-kuZ" secondAttribute="bottom" constant="54" id="X0I-3X-4Do"/>
+                            <constraint firstItem="ytC-Gc-kuZ" firstAttribute="leading" secondItem="RWy-mw-Jfz" secondAttribute="leading" constant="112" id="czQ-5b-qYJ"/>
                             <constraint firstItem="ucy-Cy-xRE" firstAttribute="leading" secondItem="RWy-mw-Jfz" secondAttribute="leading" constant="48" id="gAc-hk-tQI"/>
                             <constraint firstItem="2jl-54-Mqs" firstAttribute="top" secondItem="RWy-mw-Jfz" secondAttribute="top" constant="40" id="h1c-Wf-Xnf"/>
                             <constraint firstItem="RWy-mw-Jfz" firstAttribute="trailing" secondItem="ucy-Cy-xRE" secondAttribute="trailing" constant="40" id="heD-cY-E5s"/>
@@ -249,10 +266,16 @@
                         <viewLayoutGuide key="safeArea" id="RWy-mw-Jfz"/>
                     </view>
                     <navigationItem key="navigationItem" id="lum-kK-czf"/>
+                    <connections>
+                        <outlet property="customButton" destination="ytC-Gc-kuZ" id="Krn-Gj-QHi"/>
+                        <outlet property="highResults" destination="isb-dZ-qrq" id="5mG-Bs-bic"/>
+                        <outlet property="lowResults" destination="3q0-7D-NQD" id="DEe-4L-mlR"/>
+                        <outlet property="midResults" destination="fHe-mF-jNL" id="ZMf-bV-wJl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Fm-aQ-Hfp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="971.01449275362324" y="138.61607142857142"/>
+            <point key="canvasLocation" x="955" y="139"/>
         </scene>
     </scenes>
 </document>

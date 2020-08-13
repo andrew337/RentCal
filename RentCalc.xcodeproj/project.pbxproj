@@ -3,27 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24117F9C0FDF026C9E3250E6 /* Pods_RentCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7C636742549740803C0448 /* Pods_RentCalc.framework */; };
 		84009DAA24D397C900E18599 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84009DA924D397C900E18599 /* AppDelegate.swift */; };
 		84009DAC24D397C900E18599 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84009DAB24D397C900E18599 /* SceneDelegate.swift */; };
-		84009DAE24D397C900E18599 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84009DAD24D397C900E18599 /* ViewController.swift */; };
+		84009DAE24D397C900E18599 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84009DAD24D397C900E18599 /* SecondViewController.swift */; };
 		84009DB124D397C900E18599 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84009DAF24D397C900E18599 /* Main.storyboard */; };
 		84009DB324D397CA00E18599 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84009DB224D397CA00E18599 /* Assets.xcassets */; };
 		84009DB624D397CA00E18599 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84009DB424D397CA00E18599 /* LaunchScreen.storyboard */; };
+		84009DBE24D5CE0900E18599 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84009DBD24D5CE0900E18599 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C6151965C29BA5A3AC33340 /* Pods-RentCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentCalc.debug.xcconfig"; path = "Target Support Files/Pods-RentCalc/Pods-RentCalc.debug.xcconfig"; sourceTree = "<group>"; };
+		4E2EAE8143497088B68CDF09 /* Pods-RentCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentCalc.release.xcconfig"; path = "Target Support Files/Pods-RentCalc/Pods-RentCalc.release.xcconfig"; sourceTree = "<group>"; };
 		84009DA624D397C900E18599 /* RentCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84009DA924D397C900E18599 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84009DAB24D397C900E18599 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84009DAD24D397C900E18599 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84009DAD24D397C900E18599 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		84009DB024D397C900E18599 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84009DB224D397CA00E18599 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84009DB524D397CA00E18599 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84009DB724D397CA00E18599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84009DBD24D5CE0900E18599 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CE7C636742549740803C0448 /* Pods_RentCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RentCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24117F9C0FDF026C9E3250E6 /* Pods_RentCalc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02189FD09D080B3334CF55DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C6151965C29BA5A3AC33340 /* Pods-RentCalc.debug.xcconfig */,
+				4E2EAE8143497088B68CDF09 /* Pods-RentCalc.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		0AB17B9FC4DD105AD163E7CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE7C636742549740803C0448 /* Pods_RentCalc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		84009D9D24D397C900E18599 = {
 			isa = PBXGroup;
 			children = (
 				84009DA824D397C900E18599 /* RentCalc */,
 				84009DA724D397C900E18599 /* Products */,
+				02189FD09D080B3334CF55DF /* Pods */,
+				0AB17B9FC4DD105AD163E7CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +82,40 @@
 		84009DA824D397C900E18599 /* RentCalc */ = {
 			isa = PBXGroup;
 			children = (
+				84009DC324DF1CB000E18599 /* Views */,
+				84009DC124DF1C7400E18599 /* Controllers */,
 				84009DA924D397C900E18599 /* AppDelegate.swift */,
+				84009DC224DF1C9B00E18599 /* Model */,
 				84009DAB24D397C900E18599 /* SceneDelegate.swift */,
-				84009DAD24D397C900E18599 /* ViewController.swift */,
-				84009DAF24D397C900E18599 /* Main.storyboard */,
 				84009DB224D397CA00E18599 /* Assets.xcassets */,
 				84009DB424D397CA00E18599 /* LaunchScreen.storyboard */,
 				84009DB724D397CA00E18599 /* Info.plist */,
 			);
 			path = RentCalc;
+			sourceTree = "<group>";
+		};
+		84009DC124DF1C7400E18599 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84009DBD24D5CE0900E18599 /* HomeViewController.swift */,
+				84009DAD24D397C900E18599 /* SecondViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84009DC224DF1C9B00E18599 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84009DC324DF1CB000E18599 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84009DAF24D397C900E18599 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84009DBA24D397CA00E18599 /* Build configuration list for PBXNativeTarget "RentCalc" */;
 			buildPhases = (
+				FD0C1B32E2635717B6BA2F11 /* [CP] Check Pods Manifest.lock */,
 				84009DA224D397C900E18599 /* Sources */,
 				84009DA324D397C900E18599 /* Frameworks */,
 				84009DA424D397C900E18599 /* Resources */,
+				C04694812B8C3FA093C5C39E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,14 +186,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C04694812B8C3FA093C5C39E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RentCalc/Pods-RentCalc-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RentCalc/Pods-RentCalc-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RentCalc/Pods-RentCalc-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD0C1B32E2635717B6BA2F11 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RentCalc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84009DA224D397C900E18599 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84009DAE24D397C900E18599 /* ViewController.swift in Sources */,
+				84009DAE24D397C900E18599 /* SecondViewController.swift in Sources */,
 				84009DAA24D397C900E18599 /* AppDelegate.swift in Sources */,
 				84009DAC24D397C900E18599 /* SceneDelegate.swift in Sources */,
+				84009DBE24D5CE0900E18599 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +378,7 @@
 		};
 		84009DBB24D397CA00E18599 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C6151965C29BA5A3AC33340 /* Pods-RentCalc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +397,7 @@
 		};
 		84009DBC24D397CA00E18599 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E2EAE8143497088B68CDF09 /* Pods-RentCalc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

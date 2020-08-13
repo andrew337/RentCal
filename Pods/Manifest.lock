@@ -1,0 +1,16 @@
+PODS:
+  - SmoothButton (0.0.1)
+
+DEPENDENCIES:
+  - SmoothButton
+
+SPEC REPOS:
+  trunk:
+    - SmoothButton
+
+SPEC CHECKSUMS:
+  SmoothButton: b3191c0bdba16ff40bdd2934db9ddd93edaa9c9f
+
+PODFILE CHECKSUM: a1c88451262b696013714da67ebb1c0a5719aeed
+
+COCOAPODS: 1.8.4
