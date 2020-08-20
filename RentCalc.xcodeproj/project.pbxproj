@@ -15,6 +15,7 @@
 		84009DB324D397CA00E18599 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84009DB224D397CA00E18599 /* Assets.xcassets */; };
 		84009DB624D397CA00E18599 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84009DB424D397CA00E18599 /* LaunchScreen.storyboard */; };
 		84009DBE24D5CE0900E18599 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84009DBD24D5CE0900E18599 /* HomeViewController.swift */; };
+		84009DC524EDF94400E18599 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84009DC424EDF94400E18599 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		84009DB524D397CA00E18599 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84009DB724D397CA00E18599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84009DBD24D5CE0900E18599 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		84009DC424EDF94400E18599 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE7C636742549740803C0448 /* Pods_RentCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RentCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,6 +92,7 @@
 				84009DB224D397CA00E18599 /* Assets.xcassets */,
 				84009DB424D397CA00E18599 /* LaunchScreen.storyboard */,
 				84009DB724D397CA00E18599 /* Info.plist */,
+				84009DC424EDF94400E18599 /* GoogleService-Info.plist */,
 			);
 			path = RentCalc;
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 				84009DA324D397C900E18599 /* Frameworks */,
 				84009DA424D397C900E18599 /* Resources */,
 				C04694812B8C3FA093C5C39E /* [CP] Copy Pods Resources */,
+				AC08935AC0945B13626A4B4F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84009DB624D397CA00E18599 /* LaunchScreen.storyboard in Resources */,
+				84009DC524EDF94400E18599 /* GoogleService-Info.plist in Resources */,
 				84009DB324D397CA00E18599 /* Assets.xcassets in Resources */,
 				84009DB124D397C900E18599 /* Main.storyboard in Resources */,
 			);
@@ -187,6 +192,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		AC08935AC0945B13626A4B4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RentCalc/Pods-RentCalc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RentCalc/Pods-RentCalc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RentCalc/Pods-RentCalc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C04694812B8C3FA093C5C39E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

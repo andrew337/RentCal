@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>695278580453-efnpfphtp2c3the8upua5ogcrqd1shk1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.695278580453-efnpfphtp2c3the8upua5ogcrqd1shk1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCAq1XUqLEgP0qvix3eW18QW7VMvtQ_OR8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>695278580453</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.AndrewHolmes.RentCalc</string>
+	<key>PROJECT_ID</key>
+	<string>rentcalc-728ff</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rentcalc-728ff.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:695278580453:ios:0085cfba2dd0794f1f1a0c</string>
+	<key>DATABASE_URL</key>
+	<string>https://rentcalc-728ff.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-4701576581769529~5020636704</string>
+</dict>
+</plist>

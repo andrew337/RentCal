@@ -7,4 +7,7 @@ target 'RentCalc' do
 
   # Pods for RentCalc
     pod 'SmoothButton'
+    pod 'Firebase/Core'
+    pod 'Firebase/AdMob'
+    pod 'Google-Mobile-Ads-SDK'
 end

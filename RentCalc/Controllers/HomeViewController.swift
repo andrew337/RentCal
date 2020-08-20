@@ -20,15 +20,20 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var secondTitleLabel: UILabel!
     @IBOutlet weak var affordButtonLabel: UIButton!
+    @IBOutlet weak var errorLabel: UILabel!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(red: 0.32, green: 0.92, blue: 0.92, alpha: 1.00)
+        incomeTextField.delegate = self
+        expenseTextField.delegate = self
+        savingsTextField.delegate = self
+        errorLabel.alpha = 0
+//        view.backgroundColor = UIColor(red: 0.32, green: 0.92, blue: 0.92, alpha: 1.00)
         affordButtonLabel.layer.cornerRadius = 20
-        titleLabel.textColor = UIColor(red: 0.94, green: 0.26, blue: 0.22, alpha: 1.00)
-        secondTitleLabel.textColor = UIColor(red: 1.00, green: 0.62, blue: 0.46, alpha: 1.00)
+//        titleLabel.textColor = UIColor(red: 0.94, green: 0.26, blue: 0.22, alpha: 1.00)
+//        secondTitleLabel.textColor = UIColor(red: 1.00, green: 0.62, blue: 0.46, alpha: 1.00)
     }
     
     
@@ -67,9 +72,14 @@ class HomeViewController: UIViewController {
             let savings = Double(savingsTextField.text!)!
             
             
-            let lowCost = ((income - (expense + savings)) * 0.25)
+            let lowCost = ((income - (expense + savings)) * 0.15)
             let midCost = (income - (expense + savings)) * ( 30 / 100)
             let highCost = (income - (expense + savings)) * ( 60 / 100)
+            
+            if lowCost < 0 || midCost < 0 || highCost < 0 {
+                errorLabel.text = "Results yeild a negative result. Please try again"
+                errorLabel.alpha = 1
+            } else {
             
             lowValue = String(format: "%.0f", lowCost)
             midValue = String(format: "%.0f", midCost)
@@ -77,6 +87,21 @@ class HomeViewController: UIViewController {
             
             
             performSegue(withIdentifier: "Results", sender: self)
+            }
         }
+    }
+    
+   
+    
+    
+    
+}
+
+extension HomeViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let allowedCharacters = "1234567890"
+        let allowedCharacterSet = CharacterSet(charactersIn: allowedCharacters)
+        let typedCharacterSet = CharacterSet(charactersIn: string)
+        return allowedCharacterSet.isSuperset(of: typedCharacterSet)
     }
 }
