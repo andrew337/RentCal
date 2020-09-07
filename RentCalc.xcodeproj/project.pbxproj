@@ -15,8 +15,19 @@
 		84009DB324D397CA00E18599 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84009DB224D397CA00E18599 /* Assets.xcassets */; };
 		84009DB624D397CA00E18599 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84009DB424D397CA00E18599 /* LaunchScreen.storyboard */; };
 		84009DBE24D5CE0900E18599 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84009DBD24D5CE0900E18599 /* HomeViewController.swift */; };
-		84009DC524EDF94400E18599 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84009DC424EDF94400E18599 /* GoogleService-Info.plist */; };
+		8414F4D525031DBA00C6C8A2 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8414F4D425031DBA00C6C8A2 /* HomeViewControllerTests.swift */; };
+		8414F4D72504397E00C6C8A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8414F4D62504397E00C6C8A2 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8414F4CE250319AC00C6C8A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84009D9E24D397C900E18599 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84009DA524D397C900E18599;
+			remoteInfo = RentCalc;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3C6151965C29BA5A3AC33340 /* Pods-RentCalc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentCalc.debug.xcconfig"; path = "Target Support Files/Pods-RentCalc/Pods-RentCalc.debug.xcconfig"; sourceTree = "<group>"; };
@@ -30,7 +41,11 @@
 		84009DB524D397CA00E18599 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84009DB724D397CA00E18599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84009DBD24D5CE0900E18599 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		84009DC424EDF94400E18599 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8414F4C9250319AC00C6C8A2 /* RentCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RentCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8414F4CD250319AC00C6C8A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8414F4D325031DB900C6C8A2 /* RentCalcTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RentCalcTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		8414F4D425031DBA00C6C8A2 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		8414F4D62504397E00C6C8A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE7C636742549740803C0448 /* Pods_RentCalc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RentCalc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -40,6 +55,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				24117F9C0FDF026C9E3250E6 /* Pods_RentCalc.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8414F4C6250319AC00C6C8A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				84009DA824D397C900E18599 /* RentCalc */,
+				8414F4CA250319AC00C6C8A2 /* RentCalcTests */,
 				84009DA724D397C900E18599 /* Products */,
 				02189FD09D080B3334CF55DF /* Pods */,
 				0AB17B9FC4DD105AD163E7CD /* Frameworks */,
@@ -77,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				84009DA624D397C900E18599 /* RentCalc.app */,
+				8414F4C9250319AC00C6C8A2 /* RentCalcTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,7 +116,7 @@
 				84009DB224D397CA00E18599 /* Assets.xcassets */,
 				84009DB424D397CA00E18599 /* LaunchScreen.storyboard */,
 				84009DB724D397CA00E18599 /* Info.plist */,
-				84009DC424EDF94400E18599 /* GoogleService-Info.plist */,
+				8414F4D62504397E00C6C8A2 /* GoogleService-Info.plist */,
 			);
 			path = RentCalc;
 			sourceTree = "<group>";
@@ -121,6 +145,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		8414F4CA250319AC00C6C8A2 /* RentCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				8414F4CD250319AC00C6C8A2 /* Info.plist */,
+				8414F4D425031DBA00C6C8A2 /* HomeViewControllerTests.swift */,
+				8414F4D325031DB900C6C8A2 /* RentCalcTests-Bridging-Header.h */,
+			);
+			path = RentCalcTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +168,7 @@
 				84009DA424D397C900E18599 /* Resources */,
 				C04694812B8C3FA093C5C39E /* [CP] Copy Pods Resources */,
 				AC08935AC0945B13626A4B4F /* [CP] Embed Pods Frameworks */,
+				84DC3E0024FDC8170071BC2C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -144,18 +179,41 @@
 			productReference = 84009DA624D397C900E18599 /* RentCalc.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8414F4C8250319AC00C6C8A2 /* RentCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8414F4D0250319AC00C6C8A2 /* Build configuration list for PBXNativeTarget "RentCalcTests" */;
+			buildPhases = (
+				8414F4C5250319AC00C6C8A2 /* Sources */,
+				8414F4C6250319AC00C6C8A2 /* Frameworks */,
+				8414F4C7250319AC00C6C8A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8414F4CF250319AC00C6C8A2 /* PBXTargetDependency */,
+			);
+			name = RentCalcTests;
+			productName = RentCalcTests;
+			productReference = 8414F4C9250319AC00C6C8A2 /* RentCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		84009D9E24D397C900E18599 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1160;
+				LastSwiftUpdateCheck = 1170;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Holmes Org";
 				TargetAttributes = {
 					84009DA524D397C900E18599 = {
 						CreatedOnToolsVersion = 11.6;
+					};
+					8414F4C8250319AC00C6C8A2 = {
+						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
+						TestTargetID = 84009DA524D397C900E18599;
 					};
 				};
 			};
@@ -173,6 +231,7 @@
 			projectRoot = "";
 			targets = (
 				84009DA524D397C900E18599 /* RentCalc */,
+				8414F4C8250319AC00C6C8A2 /* RentCalcTests */,
 			);
 		};
 /* End PBXProject section */
@@ -183,15 +242,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				84009DB624D397CA00E18599 /* LaunchScreen.storyboard in Resources */,
-				84009DC524EDF94400E18599 /* GoogleService-Info.plist in Resources */,
+				8414F4D72504397E00C6C8A2 /* GoogleService-Info.plist in Resources */,
 				84009DB324D397CA00E18599 /* Assets.xcassets in Resources */,
 				84009DB124D397C900E18599 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8414F4C7250319AC00C6C8A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		84DC3E0024FDC8170071BC2C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 		AC08935AC0945B13626A4B4F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,7 +346,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8414F4C5250319AC00C6C8A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8414F4D525031DBA00C6C8A2 /* HomeViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8414F4CF250319AC00C6C8A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84009DA524D397C900E18599 /* RentCalc */;
+			targetProxy = 8414F4CE250319AC00C6C8A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		84009DAF24D397C900E18599 /* Main.storyboard */ = {
@@ -317,7 +417,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -404,6 +504,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 8AD4NX7R6N;
 				INFOPLIST_FILE = RentCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -436,6 +537,56 @@
 			};
 			name = Release;
 		};
+		8414F4D1250319AC00C6C8A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8AD4NX7R6N;
+				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Firebase/CoreOnly/Sources\"";
+				INFOPLIST_FILE = RentCalcTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AndrewHolmes.RentCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RentCalcTests/RentCalcTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RentCalc.app/RentCalc";
+			};
+			name = Debug;
+		};
+		8414F4D2250319AC00C6C8A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8AD4NX7R6N;
+				HEADER_SEARCH_PATHS = "\"${PODS_ROOT}/Firebase/CoreOnly/Sources\"";
+				INFOPLIST_FILE = RentCalcTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AndrewHolmes.RentCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RentCalcTests/RentCalcTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RentCalc.app/RentCalc";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -453,6 +604,15 @@
 			buildConfigurations = (
 				84009DBB24D397CA00E18599 /* Debug */,
 				84009DBC24D397CA00E18599 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8414F4D0250319AC00C6C8A2 /* Build configuration list for PBXNativeTarget "RentCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8414F4D1250319AC00C6C8A2 /* Debug */,
+				8414F4D2250319AC00C6C8A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

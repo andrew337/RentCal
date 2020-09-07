@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>695278580453-efnpfphtp2c3the8upua5ogcrqd1shk1.apps.googleusercontent.com</string>
+	<string>1050766186286-t2sbghmmg1btavv2vmgdijji7h6cu22a.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.695278580453-efnpfphtp2c3the8upua5ogcrqd1shk1</string>
+	<string>com.googleusercontent.apps.1050766186286-t2sbghmmg1btavv2vmgdijji7h6cu22a</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCAq1XUqLEgP0qvix3eW18QW7VMvtQ_OR8</string>
+	<string>AIzaSyB448suLMdQHE7SbWa3hoyf-AOUN35ZwGQ</string>
 	<key>GCM_SENDER_ID</key>
-	<string>695278580453</string>
+	<string>1050766186286</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.AndrewHolmes.RentCalc</string>
 	<key>PROJECT_ID</key>
-	<string>rentcalc-728ff</string>
+	<string>rentcalc101</string>
 	<key>STORAGE_BUCKET</key>
-	<string>rentcalc-728ff.appspot.com</string>
+	<string>rentcalc101.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,10 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:695278580453:ios:0085cfba2dd0794f1f1a0c</string>
+	<string>1:1050766186286:ios:01c00ba402a2465f034cbf</string>
 	<key>DATABASE_URL</key>
-	<string>https://rentcalc-728ff.firebaseio.com</string>
-	<key>ADMOB_APP_ID</key>
-	<string>ca-app-pub-4701576581769529~5020636704</string>
+	<string>https://rentcalc101.firebaseio.com</string>
 </dict>
 </plist>

@@ -8,7 +8,8 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+
+ class HomeViewController: UIViewController {
     
     var lowValue = "0.0"
     var midValue = "0.0"
@@ -34,11 +35,14 @@ class HomeViewController: UIViewController {
         affordButtonLabel.layer.cornerRadius = 20
 //        titleLabel.textColor = UIColor(red: 0.94, green: 0.26, blue: 0.22, alpha: 1.00)
 //        secondTitleLabel.textColor = UIColor(red: 1.00, green: 0.62, blue: 0.46, alpha: 1.00)
+        
     }
     
     
     @IBAction func calculateButton(_ sender: UIButton) {
-        nextScreen()
+        fatalError()
+       //nextScreen()
+       
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -87,13 +91,11 @@ class HomeViewController: UIViewController {
             
             
             performSegue(withIdentifier: "Results", sender: self)
+                
+                
             }
         }
     }
-    
-   
-    
-    
     
 }
 
@@ -103,5 +105,9 @@ extension HomeViewController: UITextFieldDelegate {
         let allowedCharacterSet = CharacterSet(charactersIn: allowedCharacters)
         let typedCharacterSet = CharacterSet(charactersIn: string)
         return allowedCharacterSet.isSuperset(of: typedCharacterSet)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }

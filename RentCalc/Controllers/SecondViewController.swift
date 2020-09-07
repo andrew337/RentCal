@@ -32,7 +32,7 @@ class SecondViewController: UIViewController {
         
         customButton.layer.cornerRadius = 15
         customButton.clipsToBounds = true
-        customButton.backgroundColor = UIColor.red
+        //customButton.backgroundColor = UIColor.red
         
         bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
         bannerView.rootViewController = self
