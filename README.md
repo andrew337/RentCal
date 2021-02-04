@@ -5,7 +5,7 @@ Screenshots
 ![IMG_0053](https://user-images.githubusercontent.com/32113721/106833122-9f422700-6658-11eb-9b02-2b9e40848787.PNG)
 
 # What I learned
-Segues
-Coding Logic
-UI Text Field Delegate
-Ad Banner
+- Segues
+- Coding Logic
+- UI Text Field Delegate
+- Ad Banner
